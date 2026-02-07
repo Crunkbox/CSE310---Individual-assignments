@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlunwjbyi1s1i"]
+
+[ext_resource type="Script" uid="uid://dqou80b3cmcy1" path="res://scripts/card.gd" id="1_d81rb"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_6u4wf"]
+
+[node name="Card" type="Node2D"]
+script = ExtResource("1_d81rb")
+cardName = null
+cardDescription = null
+cardCost = null
+
+[node name="BaseCardSprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = SubResource("ImageTexture_6u4wf")
+
+[node name="CostDisplay" type="Node2D" parent="."]
+
+[node name="CostBaseSprite" type="Sprite2D" parent="CostDisplay"]
+
+[node name="CostLabel" type="Label" parent="CostDisplay"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CardName" type="Node2D" parent="."]
+
+[node name="NameLabel" type="Label" parent="CardName"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Cardimage" type="Node2D" parent="."]
+
+[node name="CardImageSprite" type="Sprite2D" parent="Cardimage"]
+
+[node name="CardDescription" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
